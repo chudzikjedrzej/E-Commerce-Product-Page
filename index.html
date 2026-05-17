@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="E-CommerceStyle.css">
+</head>
+<body>
+
+<div class="mobile-overlay"></div>
+
+<header>
+  <div class="container header-content">
+    <div class="left-section">
+      <button class="mobile-menu-btn">
+        <img src="icon-menu.svg" alt="menu">
+      </button>
+
+      <div class="logo">sneakers</div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="right-section">
+      <button class="cart-btn">
+        <img src="icon-cart.svg" alt="cart">
+        <span class="cart-count">0</span>
+      </button>
+
+      <div class="cart-dropdown">
+        <div class="cart-header">Cart</div>
+
+        <div class="cart-body">
+          <p class="empty-cart">Your cart is empty.</p>
+        </div>
+      </div>
+
+      <img class="avatar" src="image-avatar.png" alt="avatar">
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container product-layout">
+
+    <section class="gallery">
+      <img class="main-image" src="image-product-1.jpg" alt="product image">
+
+      <div class="thumbs">
+        <div class="thumb active" data-index="0">
+          <img src="image-product-1-thumbnail.jpg" alt="thumb">
+        </div>
+
+        <div class="thumb" data-index="1">
+          <img src="image-product-2-thumbnail.jpg" alt="thumb">
+        </div>
+
+        <div class="thumb" data-index="2">
+          <img src="image-product-3-thumbnail.jpg" alt="thumb">
+        </div>
+
+        <div class="thumb" data-index="3">
+          <img src="image-product-4-thumbnail.jpg" alt="thumb">
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <p class="company">Sneaker Company</p>
+
+      <h1>Fall Limited Edition Sneakers</h1>
+
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything
+        the weather can offer.
+      </p>
+
+      <div class="pricing-mobile">
+        <div>
+          <div class="price-row">
+            <p class="price">$125.00</p>
+            <span class="discount">50%</span>
+          </div>
+
+          <p class="old-price">$250.00</p>
+        </div>
+      </div>
+
+      <div class="purchase">
+        <div class="quantity">
+          <button class="minus-btn">
+            <img src="icon-minus.svg" alt="minus">
+          </button>
+
+          <span class="quantity-value">0</span>
+
+          <button class="plus-btn">
+            <img src="icon-plus.svg" alt="plus">
+          </button>
+        </div>
+
+        <button class="add-btn">
+          <img class="add-cart-icon" src="icon-cart.svg" alt="cart">
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<div class="lightbox">
+  <div class="lightbox-content">
+    <button class="close-lightbox">×</button>
+
+    <button class="nav-btn prev-btn">
+      <img src="icon-previous.svg" alt="previous">
+    </button>
+
+    <button class="nav-btn next-btn">
+      <img src="icon-next.svg" alt="next">
+    </button>
+
+    <img class="lightbox-main" src="image-product-1.jpg" alt="lightbox image">
+
+    <div class="lightbox-thumbs">
+      <div class="lightbox-thumb active" data-index="0">
+        <img src="image-product-1-thumbnail.jpg" alt="thumb">
+      </div>
+
+      <div class="lightbox-thumb" data-index="1">
+        <img src="image-product-2-thumbnail.jpg" alt="thumb">
+      </div>
+
+      <div class="lightbox-thumb" data-index="2">
+        <img src="image-product-3-thumbnail.jpg" alt="thumb">
+      </div>
+
+      <div class="lightbox-thumb" data-index="3">
+        <img src="image-product-4-thumbnail.jpg" alt="thumb">
+      </div>
+    </div>
+  </div>
+</div>
+  
+<script src="E-CommerceScript.js"></script>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Jędrzej</a>.
+  </footer>
+</body>
+</html>
