@@ -77,6 +77,23 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.mobile-overlay {
+    display: none;
+}
+
+.close-menu-btn {
+    display: none;
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
 }
 
 nav a {
@@ -454,14 +471,6 @@ h1 {
     right: -28px;
 }
 
-.mobile-menu-btn {
-    display: none;
-}
-
-.mobile-overlay {
-    display: none;
-}
-
 
 /*  ----------------------------------   Footer  ----------------------------------   */
 
@@ -492,6 +501,8 @@ h1 {
 
     header {
     border-bottom: none;
+    position: relative;
+    z-index: 400;
     }
 
     .header-content {
@@ -500,6 +511,11 @@ h1 {
     }
 
     .mobile-menu-btn {
+    display: block;
+    position: relative;
+    }
+
+    .close-menu-btn {
     display: block;
     }
 
@@ -511,7 +527,7 @@ h1 {
     width: 250px;
     height: 100vh;
     padding: 6rem 1.5rem;
-    z-index: 200;
+    z-index: 450;
     transition: 0.3s ease;
     }
 
@@ -531,12 +547,12 @@ h1 {
     color: var(--very-dark-blue);
     }
 
-    .mobile-overlay.active {
+   .mobile-overlay.active {
     display: block;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.7);
-    z-index: 100;
+    z-index: 200;
     }
 
     .product-layout {
